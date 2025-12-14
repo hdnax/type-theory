@@ -27,7 +27,7 @@ let rec eval1 t = match t with
     let t1' = eval1 t1 in
       TmIf(info, t1', t2, t3)
   | TmSucc(info, t1) ->
-    let t1' = eval1 t1' in
+    let t1' = eval1 t1 in
       TmSucc(info, t1')
   | TmPred(_, TmZero(_)) -> TmZero(dummyinfo)
   | TmPred(_, TmSucc(_, nv1)) when isnumericval nv1 -> nv1
@@ -40,3 +40,8 @@ let rec eval1 t = match t with
     let t1' = eval1 t1 in
       TmIsZero(info, t1')
   | _ -> raise NoRuleApplies
+
+let rec eval t =
+  try let t' = eval1 t
+    in eval t'
+  with NoRuleApplies -> t

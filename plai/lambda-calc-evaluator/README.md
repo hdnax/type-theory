@@ -8,3 +8,4 @@ Build a simple evaluator for an untyped lambda calculus extended with numbers an
 
 - [x] Implement an AST for variables, λ, application, booleans, numbers.
 - [x] Implement a basic evaluator (substitution-based is fine).
+- [x] Extend the interpreter with `if` and numeric `+`.

@@ -11,6 +11,7 @@ Inductive day : Type :=
   | sunday.
 
 (* Pattern matching *)
+(** The type signature is optional due to Rocq's ability to perform type inference - but it is included anyway to enhance readability **)
 Definition next_working_day (d : day) : day :=
   match d with
   | monday => tuesday

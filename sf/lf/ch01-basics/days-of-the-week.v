@@ -37,3 +37,7 @@ Compute (next_working_day friday).
 
 Compute (next_working_day (next_working_day saturday)).
 (** ==> tuesday : day **)
+
+(* Record expectations using the `Example` command *)
+Example test_next_working_day : (next_working_day (next_working_day saturday)) = tuesday.
+(** ==> next_working_day (next_working_day saturday) = tuesday **)

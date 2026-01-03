@@ -46,3 +46,10 @@ Example test_negb1: (negb true) = false.
 Proof. simpl. reflexivity. Qed.
 Example test_negb2: (negb false) = true.
 Proof. simpl. reflexivity. Qed.
+
+(* Notation *)
+Notation "x && y" := (andb x y).
+Notation "x || y" := (orb x y).
+
+Example test_orb5: false || false || true = true.
+Proof. simpl. reflexivity. Qed.

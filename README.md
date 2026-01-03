@@ -6,6 +6,8 @@ Hands-on implementations of type systems, interpreters, and related concepts. In
 
 - **TAPL** — Types and Programming Languages. Covers type systems, operational semantics, lambda calculus, and typed languages. Exercises in OCaml.
 - **PLAI** — Programming Languages: Application and Interpretation. Covers interpreters, parsing, desugaring, and language design. Exercises in Typed Plait.
+- **SF** — Software Foundations
+  - **LF** — Logic Foundations
 
 ## Concepts
 

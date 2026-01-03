@@ -32,7 +32,7 @@ Definition next_working_day (d : day) : day :=
 (** ==> next_working_day is defined **)
 
 (* Invoke a function using the `Compute` command *)
-Compute (next_working_day friday)
+Compute (next_working_day friday).
 (** ==> monday : day **)
 
 Compute (next_working_day (next_working_day saturday)).

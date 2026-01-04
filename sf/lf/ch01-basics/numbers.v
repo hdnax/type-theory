@@ -1,5 +1,6 @@
 (* vim:ft=coq *)
 
+Module NatPlayground.
 (* Recursive definition to define an unary representation of natural numbers *)
 Inductive nat : Type :=
   | O             (* zero *)
@@ -16,3 +17,4 @@ Definition pred (n : nat) : nat :=
   | O => O
   | S n' => n'
   end.
+End NatPlayground.

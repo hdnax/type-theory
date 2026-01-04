@@ -28,4 +28,9 @@ Module NatPlayground.
     | S O => O
     | S (S n') => n'
     end.
+
+  (* The constructor has the type nat -> nat, just like the functions, however, the constructor has no computation rules *)
+  Check S : nat -> nat.
+  Check pred : nat -> nat.
+  Check minusTwo : nat -> nat.
 End NatPlayground.

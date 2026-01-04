@@ -33,4 +33,24 @@ Module NatPlayground.
   Check S : nat -> nat.
   Check pred : nat -> nat.
   Check minusTwo : nat -> nat.
+
+  (* Recursive function definition *)
+  Fixpoint even (n : nat) : nat :=
+    match n with
+    | O => true
+    | S O => false
+    | S (S n') => even n'
+    end.
+
+  Fixpoint odd (n : nat) : nat :=
+    match n with
+    | O => false
+    | S O => true
+    | S (S n') => odd n'
+    end.
+
+  Example test_odd1: odd 1 = true.
+  Proof. simpl. reflexivity. Qed.
+  Example test_odd2: odd 4 = false.
+  Proof. simpl. reflexivity. Qed.
 End NatPlayground.

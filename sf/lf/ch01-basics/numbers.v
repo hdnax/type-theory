@@ -35,7 +35,7 @@ Module NatPlayground.
   Check minusTwo : nat -> nat.
 
   (* Recursive function definition *)
-  Fixpoint even (n : nat) : nat :=
+  Fixpoint even (n : nat) : bool :=
     match n with
     | O => true
     | S O => false

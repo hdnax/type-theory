@@ -81,4 +81,16 @@ Module NatPlayground.
     | O => O
     | S p => mult base (exp base p)
     end.
+
+  (* Define notation with specified fixity and precedence *)
+  Notation "x + y" := (plus x y)
+    (at level 50, left associativity) : nat_scope.
+
+  Notation "x - y" := (minus x y)
+    (at level 50, left associativity) : nat_scope.
+
+  Notation "x * y" := (mult x y)
+    (at level 40, left associativity) : nat_scope.
+
+  Check ((0 + 1) + 1) : nat.
 End NatPlayground.

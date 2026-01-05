@@ -42,7 +42,7 @@ Module NatPlayground.
     | S (S n') => even n'
     end.
 
-  Fixpoint odd (n : nat) : nat :=
+  Fixpoint odd (n : nat) : bool :=
     match n with
     | O => false
     | S O => true
@@ -78,7 +78,7 @@ Module NatPlayground.
 
   Fixpoint exp (base power : nat) : nat :=
     match power with
-    | O => O
+    | O => S O
     | S p => mult base (exp base p)
     end.
 

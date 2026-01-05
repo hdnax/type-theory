@@ -75,4 +75,10 @@ Module NatPlayground.
     | _, O => n
     | S n', S m' => minus n' m'
     end.
+
+  Fixpoint exp (base power : nat) : nat :=
+    match power with
+    | O => O
+    | S p => mult base (exp base p)
+    end.
 End NatPlayground.

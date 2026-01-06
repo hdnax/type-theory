@@ -1,5 +1,9 @@
 (* vim:ft=coq *)
 
+Inductive bool : Type :=
+  | true
+  | false.
+
 Inductive nat : Type :=
   | O
   | S (n : nat).

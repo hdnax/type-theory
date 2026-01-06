@@ -1,5 +1,15 @@
 (* vim:ft=coq *)
 
+Inductive bool : Type :=
+  | true
+  | false.
+
+Definition andb (b1 : bool) (b2 : bool) : bool :=
+  match b1 with
+  | true => b2
+  | false => false
+  end.
+
 Theorem andb_true_elim2 : forall b c : bool,
   andb b c = true -> c = true.
 Proof.

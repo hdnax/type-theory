@@ -165,4 +165,28 @@ Module NatPlayground.
     - reflexivity.
     - reflexivity.
   Qed.
+
+  (** No intro pattern **)
+  Theorem negb_involutive : forall b : bool,
+    (negb (negb b)) = b.
+  Proof.
+    intros b.
+    destruct b eqn:E.
+    - reflexivity.
+    - reflexivity.
+  Qed.
+
+  (** Nested destructs **)
+  Theorem andb_commutative : forall b c : bool,
+    andb b c = andb c b.
+  Proof.
+    intros b c.
+    destruct b eqn:Eb.
+    - destruct c eqn:Ec.
+      + reflexivity.
+      + reflexivity.
+    - destruct c eqn:Ec.
+      + reflexivity.
+      + reflexivity.
+  Qed.
 End NatPlayground.

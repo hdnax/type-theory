@@ -155,4 +155,14 @@ Module NatPlayground.
     rewrite -> H.
     reflexivity.
   Qed.
+
+  (* Proof by case analysis using the `destruct` tactic *)
+  Theorem plus_1_neq_0 : forall n : nat,
+    (n + 1) =? 0 = false.
+  Proof.
+    intros n.
+    destruct n as [| n'] eqn:E.
+    - reflexivity.
+    - reflexivity.
+  Qed.
 End NatPlayground.

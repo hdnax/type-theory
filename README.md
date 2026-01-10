@@ -6,8 +6,6 @@
 
 Hands-on implementations of type systems, interpreters, and related concepts. Includes exercises from TAPL, PLAI, Software Foundations, and other sources.
 
-**Progress:** [Programming Language Journey Tracker](https://painted-jodhpur-6fe.notion.site/PLT-Home-2bbaa8fcd088806897fecb4271121468)
-
 ## Setup
 
 This project uses [Nix](https://nixos.org/) for reproducible development environments.

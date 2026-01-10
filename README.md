@@ -1,5 +1,7 @@
 # Type Theory
 
+![Status](https://img.shields.io/badge/status-active-brightblue)
+
 Hands-on implementations of type systems, interpreters, and related concepts. Includes exercises from TAPL, PLAI, Software Foundations, and other sources.
 
 ## Books

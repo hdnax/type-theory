@@ -32,4 +32,18 @@ Module LateDays.
   Compute letter_comparison B A.
   Compute letter_comparison D D.
   Compute letter_comparison B F.
+
+  (* Comparing a letter against itself gives `Eq` *)
+  Theorem letter_comparison_Eq :
+    forall l, letter_comparison l l = Eq.
+  Proof.
+    intros l.
+    destruct l eqn:El.
+    - reflexivity.
+    - reflexivity.
+    - reflexivity.
+    - reflexivity.
+    - reflexivity.
+    - reflexivity.
+  Qed.
 End LateDays.

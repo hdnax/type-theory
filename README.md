@@ -10,6 +10,9 @@ Hands-on implementations of type systems, interpreters, and related concepts. In
 
 **Flashcards**: [Notion](https://painted-jodhpur-6fe.notion.site/2c2aa8fcd08881eda13be92197bb9a52?v=2c2aa8fcd088812f91cd000c66428765&pvs=73)
 
+**Companion projects**:
+  - [dboxide](https://github.com/hdnax): A rewrite of DBML in Rust, learning from `rust-analyzer`.
+
 I would be glad if anyone helps me point out the error that I made or enlighten me on some aspects.
 
 ## Setup
